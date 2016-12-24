@@ -1,14 +1,30 @@
+//----- colors -----
+$black-color: #303e48;
 $danger-color: #f2632b;
+$gray-color: #6c7479;
 $info-color: #35b5df;
+$light-gray-color: #d1d1d1;
 $primary-color: #446cb3;
 $success-color: #87bd2a;
 $warning-color: #f7ca18;
-$black-color: #303e48;
-$light-gray-color: #d1d1d1;
-$gray-color: #6c7479;
 $white-color: #fff;
 
+//----- fonts -----
+$font-color-default: #333;
+$icons-font: fontAwesome;
+
+//----- font contents -----
+$check-mark: "\f00c";
+$empty-mark: "\a0";
+
+//----- media queries -----
+$min-width-mobile: 320px;
+$min-width-tablet: 768px;
+$min-width-desktop: 1024px;
 $mq-mobile: "only screen and (min-width : 320px) and (max-width: 767px)";
 $mq-tablet: "only screen and (min-width : 768px) and (max-width: 1023px)";
-$mq-desktop: "only screen and (min-width : 1024px) and (max-width: 1279px)";
-$mq-large: "only screen and (min-width : 1280px)";
+$mq-desktop: "only screen and (min-width : 1024px)";
+
+* {
+box-sizing: border-box;
+}

@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Atomic Dashboard!</title>
 
+	<link rel="stylesheet" type="text/css" href="libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/ad.min.css">
 </head>
 <body>
@@ -26,28 +27,80 @@
 	<section id="buttons" class="container">
 		<div class="row">
 			<h2>Buttons</h2>
-			<button type="button" name="button" class="ad-btn">Default</button>
-			<button type="button" name="button" class="ad-btn ad-btn-primary">Primary</button>
-			<button type="button" name="button" class="ad-btn ad-btn-success">Success</button>
-			<button type="button" name="button" class="ad-btn ad-btn-info">Info</button>
-			<button type="button" name="button" class="ad-btn ad-btn-danger">Danger</button>
-			<button type="button" name="button" class="ad-btn ad-btn-warning">Warning</button>
-			<button type="button" name="button" class="ad-btn ad-btn-black">Black</button>
-			<button type="button" name="button" class="ad-btn ad-btn-gray">Gray</button>
-			<button type="button" name="button" class="ad-btn ad-btn-light-gray">Light Gray</button>
-			<button type="button" name="button" class="ad-btn ad-btn-outline">Outline</button>
+			<div class="ad-col-s12">
+				<h3>Default buttons:</h3>
+				<button type="button" name="button" class="ad-btn ad-btn-default">Default</button>
+				<button type="button" name="button" class="ad-btn ad-btn-primary">Primary</button>
+				<button type="button" name="button" class="ad-btn ad-btn-success">Success</button>
+				<button type="button" name="button" class="ad-btn ad-btn-info">Info</button>
+				<button type="button" name="button" class="ad-btn ad-btn-danger">Danger</button>
+				<button type="button" name="button" class="ad-btn ad-btn-warning">Warning</button>
+				<button type="button" name="button" class="ad-btn ad-btn-black">Black</button>
+				<button type="button" name="button" class="ad-btn ad-btn-gray">Gray</button>
+				<button type="button" name="button" class="ad-btn ad-btn-outline">Outline</button>
+			</div>
 
-			<h3>Disabled</h3>
-			<button type="button" name="button" disabled="" class="ad-btn">Default</button>
-			<button type="button" name="button" disabled="" class="ad-btn ad-btn-primary">Primary</button>
-			<button type="button" name="button" disabled="" class="ad-btn ad-btn-success">Success</button>
-			<button type="button" name="button" disabled="" class="ad-btn ad-btn-info">Info</button>
-			<button type="button" name="button" disabled="" class="ad-btn ad-btn-danger">Danger</button>
-			<button type="button" name="button" disabled="" class="ad-btn ad-btn-warning">Warning</button>
-			<button type="button" name="button" disabled="" class="ad-btn ad-btn-black">Black</button>
-			<button type="button" name="button" disabled="" class="ad-btn ad-btn-gray">Gray</button>
-			<button type="button" name="button" disabled="" class="ad-btn ad-btn-light-gray">Light Gray</button>
-			<button type="button" name="button" disabled="" class="ad-btn ad-btn-outline">Outline</button>
+			<div class="ad-col-s12">
+				<h3>Disabled buttons:</h3>
+				<button type="button" name="button" disabled="" class="ad-btn ad-btn-default">Default</button>
+				<button type="button" name="button" disabled="" class="ad-btn ad-btn-primary">Primary</button>
+				<button type="button" name="button" disabled="" class="ad-btn ad-btn-success">Success</button>
+				<button type="button" name="button" disabled="" class="ad-btn ad-btn-info">Info</button>
+				<button type="button" name="button" disabled="" class="ad-btn ad-btn-danger">Danger</button>
+				<button type="button" name="button" disabled="" class="ad-btn ad-btn-warning">Warning</button>
+				<button type="button" name="button" disabled="" class="ad-btn ad-btn-black">Black</button>
+				<button type="button" name="button" disabled="" class="ad-btn ad-btn-gray">Gray</button>
+				<button type="button" name="button" disabled="" class="ad-btn ad-btn-outline">Outline</button>
+			</div>
+		</div>
+	</section>
+
+	<section id="inputs" class="container">
+		<div class="row">
+			<div class="ad-col-s12">
+				<h2>Input Fields</h2>
+				<div class="ad-col-s12 ad-col-l6">
+					<h3>Default Inputs</h3>
+					<label>
+						Text
+						<input type="text" name="name" class="ad-input" placeholder="Tex Placeholder" value="">
+					</label>
+					<label>
+						Text Invalid
+						<input type="text" name="name" class="ad-input ad-input-danger" placeholder="Tex Placeholder" value="">
+					</label>
+					<label>
+						Text Valid
+						<input type="text" name="name" class="ad-input ad-input-success" placeholder="Tex Placeholder" value="">
+					</label>
+					<label>
+						Text Alert
+						<input type="text" name="name" class="ad-input ad-input-warning" placeholder="Tex Placeholder" value="">
+					</label>
+					<label>
+						Password
+						<input type="password" name="name" class="ad-input" placeholder="Password" value="">
+					</label>
+				</div>
+				<div class="ad-col-s12 ad-col-l6">
+					<h3>Textarea</h3>
+					<label for="textarea">
+						<textarea type="textarea" name="textarea" class="ad-input" placeholder="Textarea Placeholder" value=""></textarea>
+					</label>
+					<label for="textareadisabled">
+						<textarea type="textarea" name="textareadisabled" class="ad-input" placeholder="Textarea Placeholder" disabled="" value=""></textarea>
+					</label>
+					<h3>Checkboxes</h3>
+					<label for="checkbox" class="ad-checkbox">
+						<input type="checkbox" name="checkbox" id="checkbox" class="ad-input-checkbox" value="">
+						<span>Checkbox</span>
+					</label>
+					<label for="checkboxdisabled" class="ad-checkbox">
+						<input type="checkbox" name="checkboxdisabled" id="checkboxdisabled" disabled="" checked="" class="ad-input-checkbox" value="">
+						<span>Disabled Checkbox</span>
+					</label>
+				</div>
+			</div>
 		</div>
 	</section>
 </body>
