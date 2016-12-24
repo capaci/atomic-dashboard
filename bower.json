@@ -1,0 +1,21 @@
+{
+  "name": "atomic-dashboard",
+  "description": "A Dashboard made with Atomic Design principles",
+  "main": "index.js",
+  "authors": [
+    "capaci"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/capaci/atomic-dashboard",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "dist/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}
