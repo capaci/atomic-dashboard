@@ -9,6 +9,7 @@ var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var cssnano = require('gulp-cssnano');
 var htmlmin = require('gulp-htmlmin');
+
 // Html
 gulp.task('html', function() {
     return gulp.src('src/**/*.html')
@@ -26,7 +27,7 @@ gulp.task('lint', function() {
 // Compile Our Sass
 gulp.task('sass', function() {
     return gulp.src('src/resources/scss/all.scss')
-        .pipe(sass({ includePaths : ['src/resources/scss/'] }))
+        .pipe(sass({ includePaths : ['src/resources/scss/'] }).on('error', sass.logError))
         .pipe(cssnano())
         .pipe(rename('ad.min.css'))
         .pipe(gulp.dest('dist/css'));
