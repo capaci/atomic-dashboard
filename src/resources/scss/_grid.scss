@@ -8,35 +8,40 @@ $grid-max: 980px; // Tamanho do container
 }
 
 .row {
+	display: flex;
+	flex-wrap: wrap;
 	max-width: 1024px;
 	margin: 0 auto;
 	width: 95%;
 }
 
-// Código básico das colunas do grid
-[class*="ad-col-"] {
-	float: left;
-	padding: 0 $grid-gutter;
-	margin-bottom: 20px;
-}
-
 @for $i from 1 through $grid-columns {
-	.ad-col-s-#{$i} {
+	.ad-col-s#{$i} {
+		float: left;
+		margin-bottom: 20px;
+		padding: 0 $grid-gutter;
 		width: 100% / $grid-columns * $i
 	}
 }
 
-@media #{$mq-tablet} {
+@media screen and (min-width: $min-width-tablet) {
 	@for $i from 1 through $grid-columns {
-		.ad-col-m-#{$i} {
+		.ad-col-m#{$i} {
+			float: left;
+			margin-bottom: 20px;
+			padding: 0 $grid-gutter;
 			width: 100% / $grid-columns * $i
 		}
 	}
 }
 
-@media #{$mq-desktop} {
+@media screen and (min-width: $min-width-desktop)
+{
 	@for $i from 1 through $grid-columns {
-		.ad-col-l-#{$i} {
+		.ad-col-l#{$i} {
+			float: left;
+			margin-bottom: 20px;
+			padding: 0 $grid-gutter;
 			width: 100% / $grid-columns * $i
 		}
 	}
