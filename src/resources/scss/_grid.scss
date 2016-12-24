@@ -1,0 +1,43 @@
+$grid-gutter: 10px; // espaçamento entre as colunas
+$grid-columns: 12; // Quantidade de colunas
+$grid-max: 980px; // Tamanho do container
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.row {
+	max-width: 1024px;
+	margin: 0 auto;
+	width: 95%;
+}
+
+// Código básico das colunas do grid
+[class*="ad-col-"] {
+	float: left;
+	padding: 0 $grid-gutter;
+	margin-bottom: 20px;
+}
+
+@for $i from 1 through $grid-columns {
+	.ad-col-l-#{$i} {
+		width: 100% / $grid-columns * $i
+	}
+}
+
+@media (max-width: 1024px) {
+	@for $i from 1 through $grid-columns {
+		.ad-col-m-#{$i} {
+			width: 100% / $grid-columns * $i
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	@for $i from 1 through $grid-columns {
+		.ad-col-s-#{$i} {
+			width: 100% / $grid-columns * $i
+		}
+	}
+}
