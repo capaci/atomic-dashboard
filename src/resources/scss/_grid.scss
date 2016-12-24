@@ -21,12 +21,12 @@ $grid-max: 980px; // Tamanho do container
 }
 
 @for $i from 1 through $grid-columns {
-	.ad-col-l-#{$i} {
+	.ad-col-s-#{$i} {
 		width: 100% / $grid-columns * $i
 	}
 }
 
-@media (max-width: 1024px) {
+@media #{$mq-tablet} {
 	@for $i from 1 through $grid-columns {
 		.ad-col-m-#{$i} {
 			width: 100% / $grid-columns * $i
@@ -34,9 +34,9 @@ $grid-max: 980px; // Tamanho do container
 	}
 }
 
-@media (max-width: 768px) {
+@media #{$mq-desktop} {
 	@for $i from 1 through $grid-columns {
-		.ad-col-s-#{$i} {
+		.ad-col-l-#{$i} {
 			width: 100% / $grid-columns * $i
 		}
 	}

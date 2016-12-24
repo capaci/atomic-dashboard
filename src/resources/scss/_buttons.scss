@@ -4,9 +4,9 @@ $outline-button-color: #efe;
 .ad-btn {
 	border: 0;
 	border-radius: 35px;
-	font-size: 16px;
-	height: 35px;
-	padding: 0 20px;
+	font-size: 12px;
+	height: 30px;
+	padding: 0 5px;
 	&:disabled {
 		cursor: not-allowed;
 		opacity: 0.7;
@@ -53,16 +53,17 @@ $outline-button-color: #efe;
 	}
 }
 
-@media (max-width: 1024px) {
+@media #{$mq-tablet} {
 	.ad-btn {
-		font-size: 12px;
 		height: 35px;
+		padding: 0 20px;
 	}
 }
 
-@media (max-width: 768px) {
+@media #{$mq-desktop} {
 	.ad-btn {
-		height: 30px;
-		padding: 0 5px;
+		font-size: 14px;
+		height: 35px;
+		padding: 0 20px;
 	}
 }
