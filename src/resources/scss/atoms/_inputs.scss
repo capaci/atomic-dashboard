@@ -32,6 +32,7 @@
 label.ad-checkbox {
 	font-size: 14px;
 	color: $font-color-default;
+	display: inline-block;
 	margin-bottom: 0;
 	padding-left: 0;
 	padding-right: 0;
@@ -111,6 +112,21 @@ label.ad-radio {
 			opacity: 0.5;
 			font-size: 9px;
 		}
+	}
+}
+
+label.ad-select {
+	& > span {
+		display: block;
+	}
+	& > select {
+		// appearance: none;
+		background-color: transparent;
+		border-radius: 4px;
+		border: solid 1px $light-gray-color;
+		font-size: 13px;
+		height: 50px;
+		width: 100%;
 	}
 }
 
