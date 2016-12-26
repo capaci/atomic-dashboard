@@ -2,13 +2,15 @@
 var gulp = require('gulp');
 
 // Include Our Plugins
-var jshint = require('gulp-jshint');
-var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var rename = require('gulp-rename');
 var cssnano = require('gulp-cssnano');
 var htmlmin = require('gulp-htmlmin');
+var jshint = require('gulp-jshint');
+var rename = require('gulp-rename');
+var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
+var uglify = require('gulp-uglify');
 
 // Html
 gulp.task('html', function() {
@@ -28,6 +30,8 @@ gulp.task('lint', function() {
 gulp.task('sass', function() {
     return gulp.src('src/resources/scss/all.scss')
         .pipe(sass({ includePaths : ['src/resources/scss/'] }).on('error', sass.logError))
+        .pipe(sourcemaps.write())
+        .pipe(autoprefixer())
         .pipe(cssnano())
         .pipe(rename('ad.min.css'))
         .pipe(gulp.dest('dist/css'));
