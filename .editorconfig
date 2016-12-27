@@ -11,8 +11,8 @@ indent_size = 4
 
 ; Estilo de identação em arquivos SCSS
 [*.scss]
-indent_style = tab
-indent_size = 4
+indent_style = space
+indent_size = 2
 
 ; Estilo de identação em arquivos JS dentro do diretório Scripts
 [scripts/*.js]
