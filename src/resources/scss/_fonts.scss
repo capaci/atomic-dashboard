@@ -1,0 +1,48 @@
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+a,
+a:visited,
+a:hover,
+p,
+label,
+label > span {
+  font-family: $font-texts;
+  color: $font-color-default;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-titles;
+}
+
+h1 {
+  color: $black-color;
+}
+
+h2 {
+  color: $gray-color;
+}
+
+h3 {
+  color: $info-color;
+}
+
+h4 {
+  color: $success-color;
+}
+
+h5 {
+  color: $black-color;
+}
+
+h6 {
+  font-family: $gray-color;
+}
