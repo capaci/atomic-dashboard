@@ -9,16 +9,35 @@
 	<link rel="stylesheet" type="text/css" href="css/ad.min.css">
 </head>
 <body>
-	<nav>
-		<div>
-			<h1>logo</h1>
+	<nav class="ad-top-menu">
+		<div class="ad-top-logo">
+			<h1>LOGO</h1>
 		</div>
-		<div>
-			<ul>
+		<div class="float-right">
+				<ul class="ad-dropdown-menu">
+					<li>
+						Dropdown
+						<ul class="ad-dropdown-menu-items">
+							<li><a href="#buttons">Buttons</a></li>
+							<li><a href="#inputs">Inputs</a></li>
+						</ul>
+					</li>
+				</ul>
+			<ul class="ad-dropdown-menu active">
 				<li>
-					átomos
-					<ul>
-						<li><a href="#buttons">Buttons</a></li>
+					Active Dropdown
+					<ul class="ad-dropdown-menu-items">
+						<li class="ad-dropdown-menu-singleitem"><a href="#buttons">Buttons</a></li>
+						<li class="ad-dropdown-menu-singleitem"><a href="#inputs">Inputs</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="ad-dropdown-menu ad-profile-dropdown active">
+				<li>
+					<img src="img/nasta.png" class="ad-top-profile-img" alt="Profile image.">
+					<ul class="ad-dropdown-menu-items">
+						<li class="ad-dropdown-menu-singleitem"><a href="#buttons">Buttons</a></li>
+						<li class="ad-dropdown-menu-singleitem"><a href="#inputs">Inputs</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -130,5 +149,7 @@
 			</div>
 		</div>
 	</section>
+
+	<script src="js/all.min.js"></script>
 </body>
 </html>
