@@ -54,9 +54,8 @@ gulp.task('sass', function() {
 gulp.task('scripts', function() {
   return gulp.src('src/resources/js/*.js')
     .pipe(concat('all.js'))
-    .pipe(gulp.dest('dist'))
     .pipe(rename('all.min.js'))
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(gulp.dest('dist/js'))
     .pipe(reload({stream: true}));
 });
