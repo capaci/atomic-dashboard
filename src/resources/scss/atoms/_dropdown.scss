@@ -1,0 +1,51 @@
+.ad-dropdown-menu {
+  display: inline-block;
+  position: relative;
+
+  &.active {
+    .ad-dropdown-menu-items {
+      display: inline-block;
+    }
+  }
+
+  .ad-dropdown-menu-items {
+    background-color: lighten($light-gray-color, 15%);
+    border: solid 1px $light-gray-color;
+    border-radius: 3px;
+    display: none;
+    min-width: 130px;
+    padding: 3px 0;
+    position: absolute;
+    right: 0;
+    top: 30px;
+
+    &::before {
+      color: lighten($light-gray-color, 15%);
+      content: '\f0d8';
+      font-family: $icons-font;
+      font-size: 28px;
+      position: absolute;
+      right: 17px;
+      top: -22px;
+    }
+  }
+}
+
+&.ad-profile-dropdown {
+  @extend .ad-dropdown-menu;
+
+  .ad-dropdown-menu-items {
+    top: 60px;
+  }
+}
+
+
+.ad-dropdown-menu-singleitem {
+  color: $light-gray-color;
+  padding: 2px 15px;
+
+  &:hover {
+    background-color: lighten($light-gray-color, 10%);
+    color: $black-color;
+  }
+}
