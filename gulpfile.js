@@ -6,6 +6,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 var cssnano = require('gulp-cssnano');
 var htmlmin = require('gulp-htmlmin');
+var imagemin = require('gulp-imagemin');
 var jshint = require('gulp-jshint');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
@@ -24,6 +25,12 @@ gulp.task('html', function() {
     .pipe(reload({stream: true}));
 });
 
+gulp.task('images', function () {
+    gulp.src('src/resources/img/*')
+      .pipe(imagemin())
+      .pipe(gulp.dest('dist/img'));
+  }
+);
 // Lint Task
 gulp.task('lint', function() {
   return gulp.src('src/resources/js/*.js')
@@ -74,4 +81,4 @@ gulp.task('watch', function() {
 });
 
 // Default Task
-gulp.task('default', ['browsersync', 'lint', 'html', 'sass', 'scripts', 'watch']);
+gulp.task('default', ['browsersync', 'lint', 'html', 'images', 'sass', 'scripts', 'watch']);
