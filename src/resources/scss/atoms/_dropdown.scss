@@ -2,6 +2,13 @@
   display: inline-block;
   position: relative;
 
+  li {
+    span:hover {
+      cursor: pointer;
+      opacity: .7;
+    }
+  }
+
   &.active {
     .ad-dropdown-menu-items {
       display: inline-block;
@@ -33,6 +40,12 @@
 
 &.ad-profile-dropdown {
   @extend .ad-dropdown-menu;
+
+  li {
+    img:hover {
+      cursor: pointer;
+    }
+  }
 
   .ad-dropdown-menu-items {
     top: 60px;

@@ -16,17 +16,17 @@ $font-titles: Roboto, sans-serif;
 $font-texts: Roboto, sans-serif;
 
 //----- font contents -----
-$check-mark: "\f00c";
-$empty-mark: "\a0";
+$check-mark: '\f00c';
+$empty-mark: '\a0';
 
 //----- media queries -----
 $min-width-mobile: 320px;
 $min-width-tablet: 768px;
 $min-width-desktop: 1024px;
-$mq-mobile: "only screen and (min-width : 320px) and (max-width: 767px)";
-$mq-tablet: "only screen and (min-width : 768px) and (max-width: 1023px)";
-$mq-desktop: "only screen and (min-width : 1024px)";
+$mq-mobile: 'only screen and (min-width : 320px) and (max-width: 767px)';
+$mq-tablet: 'only screen and (min-width : 768px) and (max-width: 1023px)';
+$mq-desktop: 'only screen and (min-width : 1024px)';
 
 * {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
