@@ -1,5 +1,6 @@
-$logo-primary-color: $gray-color;
+$logo-primary-color: $info-color;
 $logo-secondary-color: $light-gray-color;
+$logo-secondary-color-hover: $gray-color;
 
 .ad-top-logo {
   cursor: pointer;
@@ -7,13 +8,14 @@ $logo-secondary-color: $light-gray-color;
 
   h1 {
     color: $logo-primary-color;
+    margin: 0;
 
     span {
       color: $logo-secondary-color;
     }
 
     &:hover span {
-      color: $logo-primary-color;
+      color: $logo-secondary-color-hover;
     }
   }
 }
