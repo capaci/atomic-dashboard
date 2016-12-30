@@ -8,6 +8,7 @@ $logo-secondary-color-hover: $gray-color;
 
   h1 {
     color: $logo-primary-color;
+    display: inline-block;
     margin: 0;
 
     span {
@@ -16,6 +17,14 @@ $logo-secondary-color-hover: $gray-color;
 
     &:hover span {
       color: $logo-secondary-color-hover;
+    }
+  }
+
+  .ad-toggle-sidebar-button {
+    margin-left: 25px;
+    i {
+      color: $success-color;
+      font-size: 24px;
     }
   }
 }

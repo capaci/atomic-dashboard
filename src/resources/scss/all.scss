@@ -11,8 +11,12 @@
 @import 'molecules/topmenu';
 @import 'molecules/sidebar';
 
-
 section {
-  margin-left: 180px;
-  padding: 66px 0 34px;
+  padding: 80px 0 34px;
+}
+
+@media screen and (min-width: $min-width-desktop) {
+  section {
+    margin-left: 180px;
+  }
 }

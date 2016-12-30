@@ -3,15 +3,21 @@
   display: block;
   height: 100%;
   left: 0;
+  margin-left: -180px;
   min-height: 100%;
   position: fixed;
   top: 80px;
+  transition: .5s;
   width: 180px;
   z-index: 904;
 
   .ad-sidebar-list {
     margin: 0;
     padding: 10px 0;
+  }
+
+  &.ad-sidebar-opened {
+    margin-left: 0;
   }
 }
 
