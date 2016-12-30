@@ -1,0 +1,43 @@
+.ad-sidebar {
+  background-color: $black-color;
+  display: block;
+  height: 100%;
+  left: 0;
+  min-height: 100%;
+  position: fixed;
+  top: 80px;
+  width: 180px;
+  z-index: 904;
+
+  .ad-sidebar-list {
+    margin: 0;
+    padding: 10px 0;
+  }
+}
+
+.ad-sidebar-list-item {
+  border-bottom: 1px solid $gray-color;
+  display: block;
+
+  &:first-child {
+    border-top: 1px solid $gray-color;
+  }
+
+  &:hover {
+    background-color: lighten($black-color, 5%);
+  }
+
+  a {
+    color: $font-color-bg-black;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 20px 20px 20px 25px;
+
+    &:hover {
+      color: $font-color-bg-black-hover;
+      padding-left: 35px;
+      transition: .3s;
+    }
+  }
+}

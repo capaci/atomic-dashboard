@@ -11,6 +11,8 @@ $white-color: #fff;
 
 //----- fonts -----
 $font-color-default: #444;
+$font-color-bg-black: lighten($gray-color, 25%);
+$font-color-bg-black-hover: #fff;
 $icons-font: fontAwesome;
 $font-titles: Roboto, sans-serif;
 $font-texts: Roboto, sans-serif;

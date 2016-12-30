@@ -14,15 +14,15 @@
 			<h1>Atomic<span>Dashboard</span></h1>
 		</div>
 		<div class="ad-top-menu-right-content">
-				<ul class="ad-dropdown-menu">
-					<li>
-						<span>Dropdown Menu</span>
-						<ul class="ad-dropdown-menu-items">
-							<li><a href="#buttons">Buttons</a></li>
-							<li><a href="#inputs">Inputs</a></li>
-						</ul>
-					</li>
-				</ul>
+			<ul class="ad-dropdown-menu">
+				<li>
+					<span>Dropdown Menu</span>
+					<ul class="ad-dropdown-menu-items">
+						<li><a href="#buttons">Buttons</a></li>
+						<li><a href="#inputs">Inputs</a></li>
+					</ul>
+				</li>
+			</ul>
 			<ul class="ad-dropdown-menu">
 				<li>
 					<span><i class="fa fa-bell"></i></span>
@@ -44,107 +44,120 @@
 		</div>
 	</nav>
 
-	<section id="buttons" class="container">
-		<div class="row">
-			<h2>Buttons</h2>
-			<div class="ad-col-s12">
-				<h3>Default buttons:</h3>
-				<button type="button" name="button" class="ad-btn ad-btn-default">Default</button>
-				<button type="button" name="button" class="ad-btn ad-btn-primary">Primary</button>
-				<button type="button" name="button" class="ad-btn ad-btn-success">Success</button>
-				<button type="button" name="button" class="ad-btn ad-btn-info">Info</button>
-				<button type="button" name="button" class="ad-btn ad-btn-danger">Danger</button>
-				<button type="button" name="button" class="ad-btn ad-btn-warning">Warning</button>
-				<button type="button" name="button" class="ad-btn ad-btn-black">Black</button>
-				<button type="button" name="button" class="ad-btn ad-btn-gray">Gray</button>
-				<button type="button" name="button" class="ad-btn ad-btn-outline">Outline</button>
-			</div>
+	<aside class="ad-sidebar">
+		<ul class="ad-sidebar-list">
+			<li class="ad-sidebar-list-item"><a href="#">Botãos</a></li>
+			<li class="ad-sidebar-list-item"><a href="#">Inputs</a></li>
+			<li class="ad-sidebar-list-item"><a href="#">Rolezinho</a></li>
+			<li class="ad-sidebar-list-item"><a href="#">Mais rolê</a></li>
+		</ul>
+	</aside>
 
-			<div class="ad-col-s12">
-				<h3>Disabled buttons:</h3>
-				<button type="button" name="button" disabled="" class="ad-btn ad-btn-default">Default</button>
-				<button type="button" name="button" disabled="" class="ad-btn ad-btn-primary">Primary</button>
-				<button type="button" name="button" disabled="" class="ad-btn ad-btn-success">Success</button>
-				<button type="button" name="button" disabled="" class="ad-btn ad-btn-info">Info</button>
-				<button type="button" name="button" disabled="" class="ad-btn ad-btn-danger">Danger</button>
-				<button type="button" name="button" disabled="" class="ad-btn ad-btn-warning">Warning</button>
-				<button type="button" name="button" disabled="" class="ad-btn ad-btn-black">Black</button>
-				<button type="button" name="button" disabled="" class="ad-btn ad-btn-gray">Gray</button>
-				<button type="button" name="button" disabled="" class="ad-btn ad-btn-outline">Outline</button>
+	<section id="buttons">
+		<div class="container">
+			<div class="row">
+				<h2>Buttons</h2>
+				<div class="ad-col-s12">
+					<h3>Default buttons:</h3>
+					<button type="button" name="button" class="ad-btn ad-btn-default">Default</button>
+					<button type="button" name="button" class="ad-btn ad-btn-primary">Primary</button>
+					<button type="button" name="button" class="ad-btn ad-btn-success">Success</button>
+					<button type="button" name="button" class="ad-btn ad-btn-info">Info</button>
+					<button type="button" name="button" class="ad-btn ad-btn-danger">Danger</button>
+					<button type="button" name="button" class="ad-btn ad-btn-warning">Warning</button>
+					<button type="button" name="button" class="ad-btn ad-btn-black">Black</button>
+					<button type="button" name="button" class="ad-btn ad-btn-gray">Gray</button>
+					<button type="button" name="button" class="ad-btn ad-btn-outline">Outline</button>
+				</div>
+
+				<div class="ad-col-s12">
+					<h3>Disabled buttons:</h3>
+					<button type="button" name="button" disabled="" class="ad-btn ad-btn-default">Default</button>
+					<button type="button" name="button" disabled="" class="ad-btn ad-btn-primary">Primary</button>
+					<button type="button" name="button" disabled="" class="ad-btn ad-btn-success">Success</button>
+					<button type="button" name="button" disabled="" class="ad-btn ad-btn-info">Info</button>
+					<button type="button" name="button" disabled="" class="ad-btn ad-btn-danger">Danger</button>
+					<button type="button" name="button" disabled="" class="ad-btn ad-btn-warning">Warning</button>
+					<button type="button" name="button" disabled="" class="ad-btn ad-btn-black">Black</button>
+					<button type="button" name="button" disabled="" class="ad-btn ad-btn-gray">Gray</button>
+					<button type="button" name="button" disabled="" class="ad-btn ad-btn-outline">Outline</button>
+				</div>
 			</div>
 		</div>
 	</section>
 
-	<section id="inputs" class="container">
-		<div class="row">
-			<div class="ad-col-s12">
-				<h2>Input Fields</h2>
-				<div class="ad-col-s12 ad-col-l6">
-					<h3>Default Inputs</h3>
-					<label>
-						Text
-						<input type="text" name="name" class="ad-input" placeholder="Tex Placeholder" value="">
-					</label>
-					<label>
-						Text Invalid
-						<input type="text" name="name" class="ad-input ad-input-danger" placeholder="Tex Placeholder" value="">
-					</label>
-					<label>
-						Text Valid
-						<input type="text" name="name" class="ad-input ad-input-success" placeholder="Tex Placeholder" value="">
-					</label>
-					<label>
-						Text Alert
-						<input type="text" name="name" class="ad-input ad-input-warning" placeholder="Tex Placeholder" value="">
-					</label>
-					<label>
-						Password
-						<input type="password" name="name" class="ad-input" placeholder="Password" value="">
-					</label>
-				</div>
-				<div class="ad-col-s12 ad-col-l6">
-					<h3>Textarea</h3>
-					<label for="textarea">
-						Default textarea
-						<textarea type="textarea" id="textarea" name="textarea" class="ad-input" placeholder="Textarea Placeholder" value=""></textarea>
-					</label>
-					<label for="textareadisabled">
-						Disabled textarea
-						<textarea type="textarea" id="textareadisabled" name="textareadisabled" class="ad-input" placeholder="Textarea Placeholder" disabled="" value=""></textarea>
-					</label>
-					<h3>Checkboxes</h3>
-					<label for="checkbox" class="ad-checkbox">
-						<input type="checkbox" name="checkbox" id="checkbox" class="ad-input-checkbox" value="">
-						<span>Checkbox</span>
-					</label>
-					<label for="checkboxdisabled" class="ad-checkbox">
-						<input type="checkbox" name="checkboxdisabled" id="checkboxdisabled" disabled="" checked="" class="ad-input-checkbox" value="">
-						<span>Disabled Checkbox</span>
-					</label>
+	<section id="inputs">
+		<div class="container">
+			<div class="row">
+				<div class="ad-col-s12">
+					<h2>Input Fields</h2>
+					<div class="ad-col-s12 ad-col-l6">
+						<h3>Default Inputs</h3>
+						<label>
+							Text
+							<input type="text" name="name" class="ad-input" placeholder="Tex Placeholder" value="">
+						</label>
+						<label>
+							Text Invalid
+							<input type="text" name="name" class="ad-input ad-input-danger" placeholder="Tex Placeholder" value="">
+						</label>
+						<label>
+							Text Valid
+							<input type="text" name="name" class="ad-input ad-input-success" placeholder="Tex Placeholder" value="">
+						</label>
+						<label>
+							Text Alert
+							<input type="text" name="name" class="ad-input ad-input-warning" placeholder="Tex Placeholder" value="">
+						</label>
+						<label>
+							Password
+							<input type="password" name="name" class="ad-input" placeholder="Password" value="">
+						</label>
+					</div>
+					<div class="ad-col-s12 ad-col-l6">
+						<h3>Textarea</h3>
+						<label for="textarea">
+							Default textarea
+							<textarea type="textarea" id="textarea" name="textarea" class="ad-input" placeholder="Textarea Placeholder" value=""></textarea>
+						</label>
+						<label for="textareadisabled">
+							Disabled textarea
+							<textarea type="textarea" id="textareadisabled" name="textareadisabled" class="ad-input" placeholder="Textarea Placeholder" disabled="" value=""></textarea>
+						</label>
+						<h3>Checkboxes</h3>
+						<label for="checkbox" class="ad-checkbox">
+							<input type="checkbox" name="checkbox" id="checkbox" class="ad-input-checkbox" value="">
+							<span>Checkbox</span>
+						</label>
+						<label for="checkboxdisabled" class="ad-checkbox">
+							<input type="checkbox" name="checkboxdisabled" id="checkboxdisabled" disabled="" checked="" class="ad-input-checkbox" value="">
+							<span>Disabled Checkbox</span>
+						</label>
 
-					<h3>Radio Buttons</h3>
-					<label for="opt1" class="ad-radio">
-						<input type="radio" name="radiobtnoptions" id="opt1" checked="" value="">
-						<span>Opt1</span>
-					</label>
-					<label for="opt2" class="ad-radio">
-						<input type="radio" name="radiobtnoptions" id="opt2" value="">
-						<span>Opt2</span>
-					</label>
-				</div>
-				<div class="ad-col-s12 ad-col-l6">
-					<h3>Select Fields</h3>
-					<label for="select" class="ad-select">
+						<h3>Radio Buttons</h3>
+						<label for="opt1" class="ad-radio">
+							<input type="radio" name="radiobtnoptions" id="opt1" checked="" value="">
+							<span>Opt1</span>
+						</label>
+						<label for="opt2" class="ad-radio">
+							<input type="radio" name="radiobtnoptions" id="opt2" value="">
+							<span>Opt2</span>
+						</label>
+					</div>
+					<div class="ad-col-s12 ad-col-l6">
+						<h3>Select Fields</h3>
+						<label for="select" class="ad-select">
 
-						<span>Opt1</span>
-						<select name="select" id="select">
-							<option value="" selected="" disabled="" hidden="">Select an option...</option>
-							<option value="option">option0</option>
-							<option value="option">option1</option>
-							<option value="option">option2</option>
-							<option value="option">option3</option>
-						</select>
-					</label>
+							<span>Opt1</span>
+							<select name="select" id="select">
+								<option value="" selected="" disabled="" hidden="">Select an option...</option>
+								<option value="option">option0</option>
+								<option value="option">option1</option>
+								<option value="option">option2</option>
+								<option value="option">option3</option>
+							</select>
+						</label>
+					</div>
 				</div>
 			</div>
 		</div>

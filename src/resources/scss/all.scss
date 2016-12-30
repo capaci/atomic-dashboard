@@ -9,4 +9,10 @@
 @import 'atoms/topprofile';
 @import 'atoms/toplogo';
 @import 'molecules/topmenu';
+@import 'molecules/sidebar';
 
+
+section {
+  margin-left: 180px;
+  padding: 66px 0 34px;
+}
