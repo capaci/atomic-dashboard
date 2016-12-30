@@ -1,0 +1,19 @@
+$logo-primary-color: $gray-color;
+$logo-secondary-color: $light-gray-color;
+
+.ad-top-logo {
+  cursor: pointer;
+  display: inline-block;
+
+  h1 {
+    color: $logo-primary-color;
+
+    span {
+      color: $logo-secondary-color;
+    }
+
+    &:hover span {
+      color: $logo-primary-color;
+    }
+  }
+}
